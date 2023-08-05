@@ -1,0 +1,447 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Winona and Matt's Wedding</title>
+    <meta name="description" content="We would like to invite you to our big day.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Winona and Matt's Wedding">
+    <meta property="og:description" content="We would like to invite you to our big day.">
+    <meta property="og:image" content="file:///Users/mnice/Documents/GitHub/wedding-website/img/ducky.jpg">
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
+    <script>
+        // load css files from CDN if local node_modules fail
+        function loadCssFromCDN(css) {
+            // create new link tag
+            const link = document.createElement('link');
+            if (css === 'animate.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
+            } else if (css === 'font-awesome.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+            }
+            link.rel = 'stylesheet';
+
+            // add link tag to head section
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+
+        // load js files from CDN if local node_modules fail
+        function loadJsFromCDN(js) {
+            if (js === 'waypoints.js') {
+                document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
+            } else if (js === 'jquery.js') {
+                document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="js/vendor/ouical.js"></script>
+</head>
+<body id="top">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<section class="hero">
+    <section class="navigation">
+        <header>
+            <div class="header-content">
+                <div class="logo"><a href="#"><img src="img/Picture1-white.png" width="100%" height="100%" alt="Logo"></a></div>
+                <div class="header-nav">
+                    <nav>
+                        <ul class="primary-nav">
+                            <li><a href="#intro">How We Met</a></li>
+                            <li><a href="#events">Events</a></li>
+                            <!-- <li><a href="#instagram">Instagram</a></li> -->
+                            <li><a href="#eng-pics">Pictures</a></li>
+                            <li class="hidden-sm hidden-xs"><a href="#video-bg">Location</a></li>
+                        </ul>
+                        <ul class="member-actions">
+                            <li><a href="#map" class="login">Venue</a></li>
+                            <li><a href="#invitation" class="btn-white btn-small">Save the Date</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navicon">
+                    <a class="nav-toggle" href="#"><span></span></a>
+                </div>
+            </div>
+        </header>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="hero-content text-center">
+                    <h1>Winona and Matt</h1>
+                    <img src="img/Picture1-white.png">
+                    <!-- logo image goes above ^^ -->
+                    <!--<p class="intro">Ram & Antara are getting hitched!</p>-->
+                    <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 hidden-xs"></div>
+            <div class="col-sm-4 hidden-xs text-center"><a href="#invitation" class="btn btn-accent btn-large rsvp-btn">Save the Date</a></div>
+            <div class="col-sm-4 hidden-xs"></div>
+        </div>
+    </div>
+    <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
+</section>
+
+<section id="invitation" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>We're getting married!</h3>
+                <p>The date is the 4<sup>th</sup> May 2024, mark your calendars!</p>
+                <div id="add-to-cal"></div>
+
+  </script>
+                <!-- <div class="share-bar"></div> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">How we met</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/matt-intro.jpg" class="wp1"></div>
+            <div class="col-md-6">
+                <p>
+                    I met Winona when we were both underclassmen in the Biomedical Engineering program at Tulane (she's older).
+                    Our first date was a walk in the park (almost literally), since I nervously talked the whole time.
+                    Over these years together, I think we have grown to know each other almost as good as ourselves.
+                    She went off to earn a PhD at Vanderbilt, and I figured I may as well get a PhD there too, for completeness.
+                </p>
+            </div>
+            <div class="col-md-3 hidden-sm hidden-xs"><img src="img/nona-intro.jpg" class="wp2"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/matt-intro.jpg" class="wp8"></div>
+            <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/nona-intro.jpg" class="wp9"></div>
+        </div>
+    </div>
+</section>
+
+<section class="events section-padding" id="events">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="header">Events <span class="time">subject to timing changes</span></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                <div class="wp3">
+                    <p><strong>4th of May</strong></p>
+
+                    <h5>Arrival<span class="time"> 4:30PM</span></h5>
+                    <p>Enjoy some time to settle in before the main event.</p>
+                </div>
+                <div class="wp5">
+                    <h5>Wedding Ceremony <span class="time"> 5PM - 5:30PM</span></h5>
+                    <p>This is why we are gathered..here..today.</p>
+                </div>
+                <div class="wp5">
+                  <h5>Cocktail Hour <span class="time"> 5:30PM - 6:30PM</span></h5>
+                  <p>Share what your favorite part of the ceremony was. We laughed.
+                  We cried. Maybe we learned something. The party train has left the station.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                <div class="wp4">
+                    <p><strong>4th of May</strong></p>
+
+                    <h5>Dinner<span class="time"> 6:30PM-7:30PM</span></h5>
+                    <p>Get some grub.</p>
+                </div>
+                <div class="wp6">
+                    <h5>Dance Party<span class="time"> 7:30PM-9:30PM</span></h5>
+                    <p>Movin', and groovin'. Lose yourself to dance. </p>
+                </div>
+                <div class="wp6">
+                    <h5>Afterparty<span class="time"> 9:30PM - </span></h5>
+                    <p>We move locations. We don't lose momentum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row section-padding">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
+                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
+                </a>
+            </div>
+        </div>
+        <!--<div class="row">
+            <div class="col-xs-12 section-border section-padding">
+            </div>
+        </div>-->
+    </div>
+
+    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <h3 class="text-center section-padding">Dress code, baby!</h3>
+                    <h5>Main Events <span class="time">5PM - 9:30</span></h5>
+                    <p>
+                        <strong>Cocktail Attire</strong>
+                        <br>
+                        Cocktail attire, sometimes called semi-formal attire. Most of the event will be in the light, and partially outdoors,
+                        so feel free to wear light colors, and something comfortable enough to dance in.
+                        <!-- <br>
+                        Ladies can wear something
+                        <a href="https://www.pinterest.com/ramswarooppatra/mehndi-dress-for-women/">bright & vivid</a>
+                        and gentlemen can be on
+                        their <a href="https://www.pinterest.com/ramswarooppatra/mehndi-dress-for-men/">vibrant
+                        kurtas</a> with pants or pyjamas along with an optional shawl. -->
+                    </p>
+
+                    <h5>Notes: <span class="time">be in the know</span></h5>
+                    <p>
+                        We are aware of various
+                        <a href="https://www.youtube.com/watch?v=blf-JfKmr2c">pop culture holidays</a>
+                        associated with <a href="https://www.youtube.com/watch?v=hW6gRwe0TC8">May 4th</a>.
+                        Wearing themed costumes runs the risk of some <a href="https://www.youtube.com/watch?v=1l8Eag9CAFk">aired grievances</a>.
+
+                        <!-- <strong>Indo-western</strong>
+                        <br> -->
+                        <!-- Ladies can flaunt their unconventional sarees,
+                        <a href="https://www.pinterest.com/ramswarooppatra/indo-western-lehengas/">lehengas</a>,
+                        <a href="https://www.pinterest.com/ramswarooppatra/indo-western-anarkalis/">anarkalis</a>,
+                        dresses and the list
+                        goes on whereas gentlemen can wear any kind of suit or just blazer. If you don't like to wear a
+                        suit/blazer, you can do a <a
+                            href="https://www.pinterest.com/ramswarooppatra/high-neck-jackets-for-men/">high-neck
+                        (band gala) waistcoat & shirt</a> combo. -->
+                    </p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+</section>
+
+<!-- <section id="instagram" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>A picture is worth a thousand words!</h3>
+                <p>Help us capture the moment, tag your photos with the hashtag
+                    <a href="https://instagram.com/explore/tags/ramandantara/" target="_blank">#RamAndAntara</a>
+                </p>
+            </div>
+        </div>
+        <div class="row section-border wp7">
+            <div class="col-md-4 col-md-offset-4">
+                <img src="img/ducky.jpg">
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section id="eng-pics" class="section-padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">Select Photos</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/ducky.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/ducky.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/ducky.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/ducky.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/IMG_0060.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/IMG_0060.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/IMG_1857.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/IMG_1857.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/IMG_0131.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/IMG_0131.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <!-- <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/NGP_4119-lg.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/NGP_4119-sm.jpg" alt=""/>
+                    </div>
+                </a>
+            </div> -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="row hidden-lg hidden-md hidden-xs">
+            <div class="col-xs-12 section-border section-padding"></div>
+        </div>
+    </div>
+    <!--<div class="row">
+        <div class="col-md-12">
+            <div class="diamond floating-logo">
+                <img src="img/sketch-logo.png" alt="Sketch Logo">
+                <div class="ring"></div>
+            </div>
+        </div>
+    </div>-->
+</section>
+
+<section id="map-section" class="section-padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="map-container">
+              <div class="col-md-10 col-md-offset-1">
+                <div id="map"></div>
+              </div>
+            </div>
+            <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+            <style>
+            body { margin: 0; padding-bottom: 50em; }
+
+            #map { position: relative;; width: 90%; height: auto; padding-bottom: 20em; margin: 10px auto;border: 1px solid black;}
+            </style>
+
+            <script>
+            	mapboxgl.accessToken = 'pk.eyJ1IjoibW5pY2UiLCJhIjoiY2xmbXJhOTl6MGVmYjN6cGZza25kY2dsYyJ9.V9kHkX6Sg7Tuc3BHBvNsQQ';
+            const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+            style: 'mapbox://styles/mapbox/streets-v12', // style URL
+            center: [-77.082073,38.889305], // starting position [lng, lat]
+            zoom: 11.5 // starting zoom
+            });
+
+            // Create a default Marker and add it to the map.
+            const marker1 = new mapboxgl.Marker()
+            .setLngLat([-77.092073,38.879305])//lyon park community center
+            .setPopup(new mapboxgl.Popup().setHTML("<h4>Wedding Ceremony</h4><p>Lyon Park Community Center</p>")) // add popup
+            .addTo(map);
+
+            // Create a default Marker and add it to the map.
+            const marker2 = new mapboxgl.Marker()
+            .setLngLat([-77.083599,38.889048])//hilton garden inn
+            .setPopup(new mapboxgl.Popup().setHTML("<h4>Wedding Hotel</h4><p>Hilton Garden Inn <br><a href='https://www.hilton.com/en/attend-my-event/nicericheyweddingevent/'>Book Your Room</a> </p>")) // add popup
+            .addTo(map);
+
+            </script>
+
+        </div>
+    </div>
+    <!-- <div class="container">
+        <div class="row hidden-lg hidden-md hidden-xs">
+            <div class="col-xs-12 section-border section-padding"></div>
+        </div>
+    </div> -->
+</section>
+
+<section id="video-bg" class="hidden-sm hidden-xs">
+    <div id="bgndVideo" class="player"
+         data-property="{videoURL:'https://www.youtube.com/watch?v=rCnvSNRUz9Y',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:1, stopAt:100, opacity:1}">
+    </div>
+    <div id="video-content">
+        <h5>Arlington, VA</h5>
+        <p>Matt's Home Town</p>
+    </div>
+</section>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center content">
+                <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+
+                <p>Crafted by Matt with lots of <span class="fa fa-heart pulse2"></span> for Winona.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
+<script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.mb.YTPlayer.min.js"></script>
+
+<script src="js/scripts.min.js"></script>
+
+
+</html>
