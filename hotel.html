@@ -1,0 +1,141 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Winona and Matt's Wedding</title>
+    <meta name="description" content="We would like to invite you to our big day.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Winona and Matt's Wedding">
+    <meta property="og:description" content="We would like to invite you to our big day.">
+    <meta property="og:image" content="/img/ducky.jpg">
+    <meta property="og:type" content="website">
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+
+    <script>
+        // load css files from CDN if local node_modules fail
+        function loadCssFromCDN(css) {
+            // create new link tag
+            const link = document.createElement('link');
+            if (css === 'animate.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
+            } else if (css === 'font-awesome.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+            }
+            link.rel = 'stylesheet';
+
+            // add link tag to head section
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+
+        // load js files from CDN if local node_modules fail
+        function loadJsFromCDN(js) {
+            if (js === 'waypoints.js') {
+                document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
+            } else if (js === 'jquery.js') {
+                document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="js/vendor/ouical.js"></script>
+</head>
+<!-- <body id="top"> -->
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<section class="navigation fixed">
+
+        <header style="border-bottom: medium; padding: 35px 0px;">
+            <div class="header-content">
+                <div class="logo"><a href="./index.html#"><img src="img/Picture1-white.png" width="auto" height="100%" alt="Logo"></a></div>
+                <div class="header-nav">
+                    <nav>
+                        <ul class="primary-nav">
+                            <li><a href="./index.html#intro">How We Met</a></li>
+                            <!-- <li><a href="#events">Events</a></li> -->
+                            <!-- <li><a href="#instagram">Instagram</a></li> -->
+                            <li><a href="./index.html#eng-pics">Pictures</a></li>
+                            <li class="hidden-sm hidden-xs"><a href="index.html#video-bg">Location</a></li>
+                        </ul>
+                        <ul class="member-actions" style="top: 26px;">
+                            <li><a href="./hotel.html" class="login">Hotel</a></li>
+                            <li><a href="./index.html#invitation" class="btn-white btn-small">Save the Date</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navicon" style="top: 34px;">
+                    <a class="nav-toggle" href="#"><span></span></a>
+                </div>
+            </div>
+        </header>
+</section>
+
+<section class="section-padding">
+</section>
+
+<section id="hotel" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>Hotel Booking Information</h3>
+                <p>You can book a room in our hotel block at a fixed discounted rate here:
+                    <a href="https://www.hilton.com/en/attend-my-event/nicericheyweddingevent/">Book a Room!</a>
+                </p>
+                <p>If you try to reserve in the Nice-Richey Wedding rate ($199) and have difficulty,
+                  please contact our Hilton Garden Inn contact Kisha Lesane <a href="mailto:klesane@hgi-arlington.com?subject=Nice-Richey Wedding">klesane@hgi-arlington.com</a>
+                  who can assist you M-F 10a-4p. Breakfast will be provided on Saturday and Sunday.</p>
+
+            </div>
+        </div>
+        <!-- <div class="row section-border wp7">
+            <div class="col-md-4 col-md-offset-4">
+                <img src="img/ducky.jpg">
+            </div>
+        </div> -->
+    </div>
+</section>
+
+<script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
+<script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.mb.YTPlayer.min.js"></script>
+
+<script src="js/scripts.min.js"></script>
+
+
+</html>
