@@ -493,15 +493,15 @@ var MD5 = function (string) {
 };
 
 // If you're creating a new interactive layer, follow the tooltips docs:
-    // http://mapbox.com/tilemill/docs/crashcourse/tooltips/
-    mapbox.load('examples.map-8ced9urs', function (o) {
-        var map = mapbox.map('mapBox');
-        map.addLayer(o.layer).zoom(3).center({
-            lat: 48,
-            lon: -100
-        });
-        map.interaction.auto();
-
-        // Attribute map
-        map.ui.attribution.add().content('<a href="http://mapbox.com/about/maps">Terms &amp; Feedback</a>');
-    });
+    // // http://mapbox.com/tilemill/docs/crashcourse/tooltips/
+    // mapbox.load('examples.map-8ced9urs', function (o) {
+    //     var map = mapbox.map('mapBox');
+    //     map.addLayer(o.layer).zoom(3).center({
+    //         lat: 48,
+    //         lon: -100
+    //     });
+    //     map.interaction.auto();
+    //
+    //     // Attribute map
+    //     map.ui.attribution.add().content('<a href="http://mapbox.com/about/maps">Terms &amp; Feedback</a>');
+    // });
