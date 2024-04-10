@@ -190,8 +190,14 @@
 
             // Create a default Marker and add it to the map.
             const marker2 = new mapboxgl.Marker()
-            .setLngLat([-77.083599,38.889048])//hilton garden inn
-            .setPopup(new mapboxgl.Popup().setHTML("<h4>Wedding Hotel</h4>Hilton Garden Inn</br>Arlington/Courthouse Plaza<br><a class='btn-white btn-small' href='https://www.hilton.com/en/attend-my-event/nicericheyweddingevent/'>Book Your Room</a>")) // add popup
+            .setLngLat([-77.0832594,38.8886548])//hilton garden inn
+            .setPopup(new mapboxgl.Popup().setHTML("<h4>Hilton Hotel</h4>Hilton Garden Inn</br>Arlington/Courthouse Plaza<br><a class='btn-white btn-small' href='https://www.hilton.com/en/attend-my-event/nicericheyweddingevent/'>Book at Hilton</a>")) // add popup
+            .addTo(map);
+
+            // Create a default Marker and add it to the map.
+            const marker4 = new mapboxgl.Marker()
+            .setLngLat([-77.0842299,38.8876727])//clarion collection 
+            .setPopup(new mapboxgl.Popup().setHTML("<h4>Clarion Hotel</h4>Clarion Collection Hotel</br>Arlington Court Suites</br><a class='btn-white btn-small' href='https://www.choicehotels.com/virginia/arlington/clarion-hotels/va058?adults=2&checkInDate=2024-05-03&checkOutDate=2024-05-05'>Book at Clarion</a>")) // add popup
             .addTo(map);
 
 
