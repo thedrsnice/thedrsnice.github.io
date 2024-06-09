@@ -13,11 +13,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>Winona and Matt's Wedding</title>
-    <meta name="description" content="We would like to invite you to our big day.">
+    <!-- <meta name="description" content="We would like to invite you to our big day."> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="Winona and Matt's Wedding">
-    <meta property="og:description" content="We would like to invite you to our big day.">
+    <!-- <meta property="og:description" content="We would like to invite you to our big day."> -->
     <meta property="og:image" content="/img/ducky.jpg">
     <meta property="og:type" content="website">
     <link rel="manifest" href="manifest.json">
@@ -87,14 +87,14 @@
                             <!-- <li><a href="#events">Events</a></li> -->
                             <!-- <li><a href="#instagram">Instagram</a></li> -->
                             <!-- <li><a href="#eng-pics">Pictures</a></li> -->
-                            <li><a href="index.html#schedule">Schedule</a></li>
-                            <li><a href="#map">Location</a></li>
-                            <li><a href="tips.html">Things To Do</a></li>
+                            <!-- <li><a href="index.html#schedule">Schedule</a></li> -->
+                            <!-- <li><a href="#map">Location</a></li>
+                            <li><a href="tips.html">Things To Do</a></li> -->
                         </ul>
                         <ul class="member-actions">
-                            <li><a href="hotel.html" class="login">Hotel</a></li>
-                            <li><a href="faqs.html" class="login">FAQs</a></li>
-                            <li><a href="https://zola.com/wedding/thedrsnice/rsvp" class="btn-white btn-small">RSVP</a></li>
+                            <!-- <li><a href="hotel.html" class="login">Hotel</a></li> -->
+                            <!-- <li><a href="faqs.html" class="login">FAQs</a></li> -->
+                            <!-- <li><a href="https://zola.com/wedding/thedrsnice/rsvp" class="btn-white btn-small">RSVP</a></li> -->
                         </ul>
                     </nav>
                 </div>
@@ -124,203 +124,170 @@
     <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
 </section>
 
-<section id="invitation" class="section-padding">
+<section id="invitation">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3>We're getting married!</h3>
-                <p>The date is May 4<sup>th</sup>, 2024. Mark your calendars for Winona and Matt's Wedding!<br>
-                You can <strong><a href="./hotel.html" >book a hotel (before 4/12/24)</a></strong> in our block as you plan your travels.</p>
-                <div id="add-to-cal"></div>
-                <a href="https://zola.com/wedding/thedrsnice/rsvp" class="btn btn-small">RSVP by Friday 4/12/24</a>
-            </div>
+                <h3>We got married!</h3>
+                <p>You can see a whole collection of photos here: <a href="https://darcytroutmanphotography.pic-time.com/-winonamatt2024/gallery">https://darcytroutmanphotography.pic-time.com/-winonamatt2024/gallery</a>
+                <!-- <p>The date is May 4<sup>th</sup>, 2024. Mark your calendars for Winona and Matt's Wedding!<br> -->
+                <!-- You can <strong><a href="./hotel.html" >book a hotel (before 4/12/24)</a></strong> in our block as you plan your travels.</p> -->
+                <!-- <div id="add-to-cal"></div> -->
+                <!-- <a href="https://zola.com/wedding/thedrsnice/rsvp" class="btn btn-small">RSVP by Friday 4/12/24</a> -->
+            <!-- </div> -->
         </div>
     </div>
 </section>
 
-<section id="tourism-section" class="section-padding">
+<section id="eng-pics" class="section-padding">
     <div class="container-fluid">
         <div class="row">
-              <div class="col-md-10 col-md-offset-1">
-                <div id="tourism">
-                  <div class="col-md-12 text-center">
-                      <h3>Welcome to Our Nation's Capital</h3>
-                      <h4>What else can you do while you're here, other than celebrate Winona & Matt's love and commitment?</h4>
-                      <p>We have compiled some resources to help supercharge your trip.<br>
-                      Here are some <strong><a href="./tips.html" >things to do</a></strong> with directions centered on staying at our event <strong><a href="./hotel.html" >hotel</a></strong>,
-                      recommended activities and itenerary, and much more.</p>
-
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="map-section" class="section-padding">
-    <div class="container-fluid">
-        <div class="row">
-            <div id="map-container">
-              <div class="col-md-10 col-md-offset-1">
-                <div id="map"></div>
-              </div>
-            </div>
-            <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
-            <style>
-            body { margin: 0; padding-bottom: 0em; }
-
-            #map { position: relative;; width: 90%; height: auto; padding-bottom: 25em; margin: 10px auto;border: 1px solid black;}
-            </style>
-
-            <script>
-            	mapboxgl.accessToken = 'pk.eyJ1IjoibW5pY2UiLCJhIjoiY2xmbXJhOTl6MGVmYjN6cGZza25kY2dsYyJ9.V9kHkX6Sg7Tuc3BHBvNsQQ';
-            const map = new mapboxgl.Map({
-            container: 'map', // container ID
-            // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-            style: 'mapbox://styles/mapbox/streets-v12', // style URL
-            center: [-77.082073,38.889305], // starting position [lng, lat]
-            zoom: 12 // starting zoom
-            });
-
-            // Create a default Marker and add it to the map.
-            const marker1 = new mapboxgl.Marker()
-            .setLngLat([-77.092073,38.879305])//lyon park community center
-            .setPopup(new mapboxgl.Popup().setHTML("<h4>Wedding Ceremony</h4><a href='https://www.google.com/maps/dir/Hilton+Garden+Inn+Arlington%2FCourthouse+Plaza,+North+Courthouse+Road,+Arlington,+VA/Lyon+Park+Community+Center,+414+N+Fillmore+St,+Arlington,+VA+22201/@38.8839026,-77.0930987,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89b7b68a48c75c51:0x4f1866683ea4382f!2m2!1d-77.0833091!2d38.8889775!1m5!1m1!1s0x89b7b69a8a09dd23:0x1f7df3af758b9c4!2m2!1d-77.092091!2d38.8791928!3e2?entry=ttu'>Lyon Park Community Center</a></br>414 N Fillmore St, Arlington, VA")) // add popup
-            .addTo(map);
-
-            // Create a default Marker and add it to the map.
-            const marker2 = new mapboxgl.Marker()
-            .setLngLat([-77.083599,38.889048])//hilton garden inn
-            .setPopup(new mapboxgl.Popup().setHTML("<h4>Wedding Hotel</h4>Hilton Garden Inn</br>Arlington/Courthouse Plaza<br><a class='btn-white btn-small' href='https://www.hilton.com/en/attend-my-event/nicericheyweddingevent/'>Book Your Room</a>")) // add popup
-            .addTo(map);
-
-
-            // Create a default Marker and add it to the map.
-            const marker3 = new mapboxgl.Marker()
-            .setLngLat([-77.0975678,38.8854626])//lyon Hall
-            .setPopup(new mapboxgl.Popup().setHTML("<h4>After Party</h4><a href='https://www.google.com/maps/dir/Lyon+Park+Community+Center,+North+Fillmore+Street,+Arlington,+VA/Lyon+Hall,+3100+Washington+Blvd,+Arlington,+VA+22201/@38.8822005,-77.0959929,16.67z/data=!4m14!4m13!1m5!1m1!1s0x89b7b69a8a09dd23:0x1f7df3af758b9c4!2m2!1d-77.0920907!2d38.8791929!1m5!1m1!1s0x89b7b6844471eb01:0xb47dbb1247ef7c7a!2m2!1d-77.0949929!2d38.8854585!3e2?entry=ttu'>Lyon Hall</a></br>3100 Washington Blvd, Arlington, VA")) // add popup
-            .addTo(map);
-
-            </script>
-
-        </div>
-    </div>
-
-</section>
-
-
-<section class="events section-padding" id="schedule">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="header">Schedule <span class="time"></span></h3>
-                
+            <div class="col-md-12 text-center">
+                <h3 class="header">Select Wedding Photos</h3>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-                <div class="wp3">
-                    <p><strong>Saturday, May 4th</strong></p>
-                    <h5>Arrival: Lyon Park Community Center<span class="time"> 4:30PM-4:45PM</span></h5>
-                    <p>Enjoy some time to settle in before the main event.</p>
-                </div>
-                <div class="wp5">
-                    <h5>Wedding Ceremony <span class="time"> 4:45PM - 5:15PM</span></h5>
-                    <p>This is why we are gathered..here..today.</p>
-                </div>
-                <div class="wp5">
-                  <h5>Cocktail "Hour" <span class="time"> 5:15PM - 6:00PM</span></h5>
-                  <p>Share what your favorite part of the ceremony was. We laughed.
-                  We cried. Maybe we learned something. The party train has left the station.</p>
-                </div>
-                <!-- <div class="wp5">
-                    <h5>Dinner<span class="time"> 6:00PM-7:00PM</span></h5>
-                    <p>Eat some of Matt & Winona's fave foods. Weather permitting, outside on grass under a tent.</p>
-                </div> -->
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                <div class="wp4">
-                    <h5>Dinner<span class="time"> 6:00PM-7:00PM</span></h5>
-                    <p>Eat some of our fave foods. Weather permitting, outside on grass under a tent.</p>
-                </div>
-                <div class="wp4">
-                    <h5>Dance Party<span class="time"> 7:00PM-9:30PM</span></h5>
-                    <p>Movin', and groovin'. Lose yourself to dance. </p>
-                </div>
-                <div class="wp6">
-                    <h5>After party: Lyon Hall<span class="time"> 9:30PM - 12:00AM</span></h5>
-                    <p>We move locations. We don't lose momentum. Snacks provided, drinks available for purchase.</p>
-                </div>
-                <div class="wp6">
-                    <p><strong>Sunday, May 5th</strong></p>
-                    <h5>Brunch: Hilton Garden Inn<span class="time"> 9:00AM-11:00AM</span></h5>
-                    <p>Everyone's invited to the wedding hotel for food and fun.</p>
-                </div>
-            </div>
-        </div>
-
-        <!--
-        <div class="row section-padding">
-            <div class="col-md-4 col-md-offset-4 text-center">
-                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
-                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/Keepers/toast.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/Keepers/toast.jpg" alt=""/>
+                    </div>
                 </a>
             </div>
-        </div>-->
-        <!--<div class="row">
-            <div class="col-xs-12 section-border section-padding">
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/Keepers/jerry.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/Keepers/jerry.jpg" alt=""/>
+                    </div>
+                </a>
             </div>
+
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/Keepers/glasses.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/Keepers/glasses.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/Keepers/vows.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/Keepers/vows.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/Keepers/alex.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/Keepers/alex.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/Keepers/nona.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/Keepers/nona.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+          </div>
+        <div class="row"><p></div>
+          <div class="row">
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/Keepers/nonatina.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/Keepers/nonatina.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/Keepers/richeyparents.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/Keepers/richeyparents.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/Keepers/nona_alex.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/Keepers/nona_alex.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/Keepers/toast2.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/Keepers/toast2.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/Keepers/mattmatt.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/Keepers/mattmatt.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/Keepers/niceparents.jpg">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/Keepers/niceparents.jpg" alt=""/>
+                    </div>
+                </a>
+            </div>
+
         </div>
-    <!-- </div> --> 
-
-    <!-- <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <h3 class="text-center section-padding">Dress code, baby!</h3>
-                    <h5>Main Events <span class="time">5PM - 9:30</span></h5>
-                    <p>
-                        <strong>Cocktail Attire</strong>
-                        <br>
-                        Cocktail attire, sometimes called semi-formal attire. Most of the event will be in the light, and partially outdoors,
-                        so feel free to wear light colors, and something comfortable enough to dance in.
-                        <!-- <br>
-                        Ladies can wear something
-                        <a href="https://www.pinterest.com/ramswarooppatra/mehndi-dress-for-women/">bright & vivid</a>
-                        and gentlemen can be on
-                        their <a href="https://www.pinterest.com/ramswarooppatra/mehndi-dress-for-men/">vibrant
-                        kurtas</a> with pants or pyjamas along with an optional shawl. -->
-                    <!-- </p>
-
-                    <h5>Notes: <span class="time">be in the know</span></h5>
-                    <p>
-                        We are aware of various
-                        <a href="https://www.youtube.com/watch?v=blf-JfKmr2c">pop culture holidays</a>
-                        associated with <a href="https://www.youtube.com/watch?v=hW6gRwe0TC8">May 4th</a>.
-                        Wearing themed costumes runs the risk of some <a href="https://www.youtube.com/watch?v=1l8Eag9CAFk">aired grievances</a>. -->
-
-                        <!-- <strong>Indo-western</strong>
-                        <br> -->
-                        <!-- Ladies can flaunt their unconventional sarees,
-                        <a href="https://www.pinterest.com/ramswarooppatra/indo-western-lehengas/">lehengas</a>,
-                        <a href="https://www.pinterest.com/ramswarooppatra/indo-western-anarkalis/">anarkalis</a>,
-                        dresses and the list
-                        goes on whereas gentlemen can wear any kind of suit or just blazer. If you don't like to wear a
-                        suit/blazer, you can do a <a
-                            href="https://www.pinterest.com/ramswarooppatra/high-neck-jackets-for-men/">high-neck
-                        (band gala) waistcoat & shirt</a> combo. -->
-                    <!-- </p>
-                </div>
-            </div> -->
-            <!-- /.modal-content -->
-        <!-- </div>
-
+    </div>
+    <div class="container">
+        <div class="row hidden-lg hidden-md hidden-xs">
+            <div class="col-xs-12 section-border section-padding"></div>
+        </div>
     </div>
 
+</section>
 
-</section> -->
 <section id="intro">
     <div class="container">
         <div class="row">
@@ -348,7 +315,7 @@
 </section>
 
 
-<section id="eng-pics" class="section-padding">
+<!-- <section id="eng-pics" class="section-padding">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -426,27 +393,7 @@
             <div class="col-xs-12 section-border section-padding"></div>
         </div>
     </div>
-    <!--<div class="row">
-        <div class="col-md-12">
-            <div class="diamond floating-logo">
-                <img src="img/sketch-logo.png" alt="Sketch Logo">
-                <div class="ring"></div>
-            </div>
-        </div>
-    </div>-->
-</section>
-
-<section id="video-bg" class="hidden-sm hidden-xs">
-    <div id="bgndVideo" class="player"
-         data-property="{videoURL:'https://www.youtube.com/watch?v=rCnvSNRUz9Y',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:1, stopAt:100, opacity:1}">
-    </div>
-    <div id="video-content">
-        <h5>Arlington, VA</h5>
-        <p>Matt's Home Town</p>
-    </div>
-</section>
-
-
+</section> -->
 
 
 <footer>
